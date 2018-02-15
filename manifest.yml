@@ -1,0 +1,10 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: springmsacc
+  buildpack: java_buildpack
+  path: ./target/springmsacc-1.0-SNAPSHOT.jar
+  memory: 256M
+  domain: mybluemix.net
+  host: spring-ms-acc

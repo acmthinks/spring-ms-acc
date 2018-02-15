@@ -16,15 +16,15 @@ public class SwaggerConfig {
     @Bean
 
     public Docket v1Api() {
-
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("application.rest.v1"))
                 .paths(regex("/v1.*"))
                 .build();
     }
+    
+    @Bean
     public Docket v2Api() {
-
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("application.rest.v2"))

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-public class Example {
+public class Example2 {
 
 
     @RequestMapping("v2")
